@@ -1,0 +1,123 @@
+body {
+   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.wrapper {
+   overflow: hidden;
+   position: relative;
+   min-height: 100%;
+   background-color: rgb(33, 30, 30);
+}
+.header {
+   background-color: rgba(22, 18, 18, 0.628);
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   z-index: 100;
+   width: 100%;
+   padding: 20px;
+}
+.header__list {
+   text-align: center;
+}
+.list {
+   font-size: 0px;
+}
+.list__item {
+   font-size: 24px;
+   display: inline-block;
+   padding-top: 8px;
+   position: relative;
+}
+.list__link {
+   color: rgb(24, 41, 129);
+   text-shadow: 5px -5px 3px rgb(233, 16, 52), -5px 5px 3px rgb(233, 226, 16);
+   font-weight: 900;
+   font-size: 24px;
+   text-transform: uppercase;
+   display: inline-block;
+   padding-bottom: 5px;
+}
+.list__item:not(:last-child) {
+   margin-right: 150px;
+}
+.sub__menu {
+   text-transform: lowercase;
+   color: bisque;
+   background-color: rgba(151, 17, 17, 0.701);
+   padding: 10px;
+   font-weight: 400;
+   font-size: 18px;
+   letter-spacing: 2px;
+   line-height: 25px;
+}
+.sub__menu {
+   position: absolute;
+   top: 100%;
+   left: 0;
+}
+.sub__menu {
+   display: none;
+}
+.header__list .list__item:hover .sub__menu {
+   display: block;
+}
+
+.lesson__image {
+   position: relative;
+}
+.fone {
+   width: 100%;
+}
+
+.car-wick {
+   position: absolute;
+   z-index: 1;
+   top: 1000px;
+   left: 350px;
+   width: 590px;
+}
+.john-wick {
+   position: absolute;
+   z-index: 2;
+   width: 250px;
+   left: 600px;
+   top: 1050px;
+}
+.john-wick:hover {
+   transform: scale(1.2);
+   transition: all 1s ease-in-out 0s;
+}
+.lesson__practice {
+   padding-top: 20px;
+   padding-bottom: 20px;
+   font-size: 0px;
+   position: relative;
+   top: 0;
+   left: 0;
+}
+.lesson__sticky {
+   padding: 5px;
+   margin: 0 auto;
+   border: 1px solid rgb(18, 12, 10);
+   width: 650px;
+   height: 400px;
+   overflow: auto;
+   background-color: rgba(53, 36, 36, 0.854);
+}
+
+.lesson__sticky p {
+   padding: 5px;
+   text-transform: uppercase;
+   font-size: 18px;
+   color: aliceblue;
+   letter-spacing: 2px;
+   line-height: 1.2;
+   background-color: rgb(10, 110, 110);
+}
+p.sticky__item {
+   position: sticky;
+   left: 50%;
+   top: 0px;
+   background-color: rgb(255, 255, 255);
+   color: black;
+}
